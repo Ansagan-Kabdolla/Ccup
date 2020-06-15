@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'restoran/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'restoran/css/normalize.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato:wght@100;400;700&family=Open+Sans:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="{% static 'restoran/libs/jquery.min.js' %}"></script>
+    <script src="{% static 'restoran/libs/all.min.js' %}"></script>
+</head>
+
+<body>
+    <a href="#" class="swipe_btn"><i class="fas fa-angle-up"></i></a>
+    <div class="home" id="home">
+        <div class="container home_container">
+            <header class="header">
+                <a href="#" class="logo"><img src="{% static 'restoran/img/Logo.png' %}" alt="LOGO" class="logo_img">
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu_item menu_item_active"><a href="#">Home</a></li>
+                        <li class="menu_item"><a href="#about">About</a></li>
+                        <li class="menu_item"><a href="#ingridients">Igredients</a></li>
+                        <li class="menu_item"><a href="#rmenu">Menu</a></li>
+                        <li class="menu_item"><a href="#review">Reviews</a></li>
+                        <li class="menu_item"><a href="#contact">Reservations</a></li>
+                    </ul>
+                </nav>
+                <div class="soc_net">
+                    <a href="#">
+                        <div class="soc_net_item soc_net_item2"><i class="fab fa-twitter sn_img"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="soc_net_item soc_net_item1"><i class="fab fa-facebook-f sn_img"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="soc_net_item soc_net_item3"><i class="fab fa-youtube"></i></div>
+                    </a>
+                </div>
+                <div class="header_card">
+                    <a href="" class="header_card_link"><i class="fas fa-shopping-cart header_card_linkk"></i></a>
+                    <div class="basket_drop">
+                        <div class="basket_item_area">
+                            <div class="basket_item">
+                                <img src="{% static 'restoran/img/dishes.png' %}" alt="photo" class="basket_item_img">
+                                <div class="basket_item_midle">
+                                    <h4 class="basket_item_title">Ramen</h4><img src="{% static 'restoran/img/star.png' %}" alt="PHOTO" class="star">
+                                    <p class="basket_item_price">1<span class="basket_item_count"></span> x <span class="basket_item_price4one">250$</span></p>
+                                </div>
+                                <a href="#"><i class="fas fa-times-circle basket_item_delete"></i></a>
+                            </div>
+                            <div class="basket_item">
+                                <img src="{% static 'restoran/img/burger.png' %}" alt="photo" class="basket_item_img">
+                                <div class="basket_item_midle">
+                                    <h4 class="basket_item_title">Burger</h4><img src="{% static 'restoran/img/star.png' %}" alt="PHOTO" class="star">
+                                    <p class="basket_item_price">1<span class="basket_item_count"></span> x <span class="basket_item_price4one">250$</span></p>
+                                </div>
+                                <a href="#"><i class="fas fa-times-circle basket_item_delete"></i></a>
+                            </div>
+                        </div>
+                        <div class="basket_totalPrice">
+                            <p class="total">TOTAL</p>
+                            <p class="price">250$</p>
+                        </div>
+                        <a href="#" class="basket_btn checkout">CHECKOUT</a>
+                        <a href="#" class="basket_btn go">GO TO CARD</a>
+                    </div>
+                </div>
+            </header>
+            <p class="home_title">the right ingredients
+                for the right food</p>
+            <div class="home_dec">
+                <img src="{% static 'restoran/img/Decoration.png' %}" alt="Dec">
+            </div>
+            <div class="home_btn_area">
+                <a href="#contact" class="home_btn">BOOK A TABLE</a>
+                <a href="#rmenu" class="home_btn">SEE THE MENU</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container about_container">
+            <div class="about_content">
+                <h3 class="about_content_title">
+                    Just the right food
+                </h3>
+                <img src="{% static 'restoran/img/Divider.png' %}" alt="decor" class="about_content_decor">
+                <p class="about_content_desc">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
+                <img src="{% static 'restoran/img/cook.png' %}" alt="cook" class="about_content_cook">
+                <img src="{% static 'restoran/img/dish.png' %}" alt="DDD" class="about_content_dish">
+            </div>
+        </div>
+    </div>
+
+    <div class="ingridients" id="ingridients">
+        <div class="container ingridients_container">
+            <div class="ingridients_content_area"></div>
+            <div class="ingridients_content">
+                <h3 class="ingridients_content_title">Fine ingredients</h3>
+                <img src="{% static 'restoran/img/iDivider.png' %}" alt="ddd" class="decor ingridients_content_decor">
+                <p class="ingridients_content_desc">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+                </p>
+                <div class="ingridients_content_el">
+                    <img src="{% static 'restoran/img/i1.png' %}" alt="1">
+                    <img src="{% static 'restoran/img/i2.png' %}" alt="2">
+                    <img src="{% static 'restoran/img/i3.png' %}" alt="2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rmenu" id="rmenu">
+        
+        <div class="container rmenu_container">
+            <div class="rmenu_content">
+                <div class="left">
+                    {% for category in left_categories %}
+                    <div class="rmenu_content_item">
+                        <h3 class="about_content_title rmenu_content_title">
+                            {{ category.name }}
+                        </h3>
+                        <img src="{% static 'restoran/img/Divider.png' %}" alt="decor" class="about_content_decor rmenu_content_decor">
+                        {% for food in category.food_set.all %}
+                        <div class="rmenu_content_item_block clearfix">
+                            <h3 class="title clearfix">{{ food.name }}</h3>
+                            <span class="price clearfix">{{ food.price }}</span>
+                            <hr>
+                            <p class="desc clearfix">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <a href="#" class="rmenu_content_item_btn">Add to card</a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="right">
+                    {% for category in right_categories %}
+                    <div class="rmenu_content_item">
+                        <h3 class="about_content_title rmenu_content_title">
+                            {{ category.name }}
+                        </h3>
+                        <img src="{% static 'restoran/img/Divider.png' %}" alt="decor" class="about_content_decor rmenu_content_decor">
+                        {% for food in category.food_set.all %}
+                        <div class="rmenu_content_item_block clearfix">
+                            <h3 class="title clearfix">{{ food.name }}</h3>
+                            <span class="price clearfix">{{ food.price }}</span>
+                            <hr>
+                            <p class="desc clearfix">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <a href="#" class="rmenu_content_item_btn">Add to card</a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="review" id="review">
+        <div class="container review_container">
+            <div class="review_content_area"></div>
+            <div class="review_content">
+                <img src="{% static 'restoran/img/kav.png' %}" alt="KAV" class="review_content_kav">
+                <div class="review_content_text">
+                    <h3 class="ingridients_content_title review_content_title">Guest Reviews</h3>
+                    <img src="{% static 'restoran/img/iDivider.png' %}" alt="ddd" class="decor ingridients_content_decor review_content_decor">
+                    <p class="review_content_desc">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+                    </p>
+                    <span class="review_content_author">- food inc, New York</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container contact_container">
+            <div class="contact_img">
+                <img src="{% static 'restoran/img/image2.png' %}" alt="IMG" class="contact_image">
+                <img src="{% static 'restoran/img/image.png' %}" alt="IMG" class="contact_image">
+            </div>
+            <div class="contact_content">
+                <h3 class="about_content_title contact_content_title">
+                    Just the right food
+                </h3>
+                <img src="{% static 'restoran/img/Divider.png' %}" alt="decor" class="about_content_decor contact_content_decor">
+                <p class="contact_content_desc">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
+                    <br><br>
+                    Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
+
+                <form action="{% url 'AddZakaz' %}" method="post" class="contact_content_form">
+                    {% csrf_token %}
+                    <div class="contact_content_form_item">
+                        <label for="contact_content_form_name">Name</label>
+                        <input type="text" id="contact_content_form_name" class="contact_content_form_input contact_content_form_name" name="name" placeholder="your name *">
+                    </div>
+                    <div class="contact_content_form_item">
+                        <label for="contact_content_form_email">Email</label>
+                        <input type="text" id="contact_content_form_email" class="contact_content_form_input contact_content_form_name" name="email" placeholder="your email *">
+                    </div>
+                    <div class="contact_content_form_item">
+                        <label for="contact_content_form_date">Date</label>
+                        <input type="date" id="contact_content_form_date" class="contact_content_form_input contact_content_form_name" name="date" placeholder="date *">
+                    </div>
+                    <div class="contact_content_form_item">
+                        <label for="contact_content_form_number">Number</label>
+                        <input type="tel" id="contact_content_form_number" class="contact_content_form_input contact_content_form_name" name="number" placeholder="party number">
+                    </div>
+                    <div class="contact_content_form_item contact_content_form_item_table">
+                        <label for="contact_content_form_table">Table</label>
+                        <select type="" id="contact_content_form_table" name="table" class="contact_content_form_input contact_content_form_table">
+                            <option>Table 1</option>
+                            <option>Table 2</option>
+                            <option>Table 3</option>
+                            <option>Table 4</option>
+                            <option>Table 5</option>
+                            <option>Table 6</option>
+                        </select>
+                        <input type="text" name="foods">
+                        <img src="{% static 'restoran/img/restaurant-furniture' %}" alt="PHOTO" id="res_table">
+                    </div>
+
+                    <button type="submit" class="contact_content_form_btn">Book now!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="container footer_container">
+            <div class="footer_content">
+                <div class="footer_content_item footer_content_item_left">
+                    <h3 class="ingridients_content_title footer_content_title">About us</h3>
+                    <img src="{% static 'restoran/img/iDivider.png' %}" alt="ddd" class="decor ingridients_content_decor footer_content_decor">
+                    <p class="footer_content_desc">Lambda's new and expanded Chelsea location represents a truly authentic <span>Greek</span> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.
+                        Lamda the best restaurant in town</p>
+                </div>
+
+                <div class="footer_content_item footer_content_middle">
+                    <h3 class="ingridients_content_title footer_content_title">Opening Hours</h3>
+                    <img src="{% static 'restoran/img/iDivider.png' %}" alt="ddd" class="decor ingridients_content_decor footer_content_decor">
+                    <p class="footer_content_desc"><span>Mon-Thu:</span> 7:00am-8:00pm</p>
+                    <p class="footer_content_desc"><span>Fri-Sun:</span> 7:00am-10:00pm</p>
+                    <div class="footer_content_item_bank">
+                        <i class="fab fa-cc-visa footer_content_item_bankItem"></i>
+                        <i class="fab fa-cc-apple-pay footer_content_item_bankItem"></i>
+                        <i class="fab fa-cc-mastercard footer_content_item_bankItem"></i>
+                        <i class="fab fa-cc-paypal footer_content_item_bankItem"></i>
+                    </div>
+                </div>
+
+                <div class="footer_content_item footer_content_item_right">
+                    <h3 class="ingridients_content_title footer_content_title">Our Location</h3>
+                    <img src="{% static 'restoran/img/iDivider.png' %}" alt="ddd" class="decor ingridients_content_decor footer_content_decor">
+                    <p class="footer_content_desc"><span>19th Paradise Street Sitia <br>128 Meserole Avenue</span></p>
+                    <div class="soc_net footer_content_soc_net">
+                        <a href="#">
+                            <div class="soc_net_item soc_net_item2"><i class="fab fa-twitter sn_img"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="soc_net_item soc_net_item1"><i class="fab fa-facebook-f sn_img"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="soc_net_item soc_net_item3"><i class="fab fa-youtube"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="soc_net_item soc_net_item3"><i class="fab fa-trello"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'restoran/js/script.js' %} "></script>
+</body>
+
+</html>
